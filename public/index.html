@@ -1,35 +1,243 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset=utf-8>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Hi from Begin!</title>
-  <link rel="stylesheet" href="https://static.begin.app/starter/default.css">
-  <link href="data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" rel="icon" type="image/x-icon">
-</head>
-<body>
-  <h2>Hello this is samplebeginapp </h2>
-  <div class="center-text">
-    <img src="https://static.begin.app/starter/begin-logo.svg" style="max-width: 250px" class="center-text">
-    <div style="margin-bottom: 24px">
-      <h1 style="margin-bottom: 24px" class="center-text">
-        Howdy, Beginner!
-      </h1>
-      <p style="margin-bottom: 8px">
-        Get started by editing this file at:
-      </p>
-      <code>
-        public/index.html
-      </code>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="app.css" />
+    <title>Durga Prasad Gidewire Configuration Developer Resume</title>
+  </head>
+
+  <body>
+    <!-- the header -->
+    <div id="header"><h2>Resume</h2></div>
+    <!-- the left border -->
+    <div class="left"></div>
+    <!-- the main body -->
+    <div class="stuff">
+      <!-- the two line breaks -->
+      <br />
+      <br />
+      <!-- the name header at starting of the resume -->
+      <div>
+        <p>&nbsp;</p>
+        <h2>Durga Prasad Ambati</h2>
+        <p>Durgaprasad4596@gmail.com</p>
+        <p>Mobile:(+91)9177014206</p>
+        <p>Visitor Count:<span id="id01"></span></p>
+        <script>
+        let response = fetch('https://jtsjrke0i5.execute-api.us-east-1.amazonaws.com/default/ResumeViewCounter')
+                      .then(res => res.json())
+                      .then(data => document.getElementById('id01').innerHTML=data.ViewCount);	
+        </script> 
+        <p>&nbsp;</p>
+      </div>
+      <!-- the horizontal line -->
+      <hr />
+
+      <!-- Carrier Objective -->
+      <div>
+        <h4>Carrier Objective:</h4>
+        <div id="carrier">
+          I would like to utilize all my Technical and Non-Technical skills for
+          the growth of my organization and to build my career.
+        </div>
+      </div>
+      <p>&nbsp;</p>
+
+      <!--Professional Summary  -->
+      <div>
+        <h4>Professional Summary:</h4>
+        <ul class="list">
+          <li>
+            I have 4+ years of experience in Analysis, Design, Development,
+            Testing and Implementation of applications.
+          </li>
+          <li>
+            Around 2+ years of experience on Guidewire Development Experience
+            and 2 years of experience in mainframe development.
+          </li>
+          <li>
+            nvolved in code and design of various Guidewire components like
+            PCF’s, Data model, Product model and different components of Guide
+            wire Suite.
+          </li>
+          <li>
+            Sound knowledge in Core Java programming language in Object Oriented
+            Programming.
+          </li>
+          <li>
+            Excellent Documentation experience in gathering customer
+            requirements, problem simulations, solutions, bug fixes and
+            technical manuals. Specialized in Software Analysis, Estimation,
+            Design, Developing robust software application.
+          </li>
+          <li>
+            Excellent Knowledge in Mainframe Technology with hands on experience
+            identifying and solving technical problems related to COBOL, PLI,
+            DB2, IMS DB and JCL.
+          </li>
+          <li>Good knowledge in Insurance domain.</li>
+          <li>
+            Involved in Project related Quality Processes – Code and Document
+            walkthrough using Checklists and maintaining Defect Tracker as part
+            of improvement process.
+          </li>
+        </ul>
+      </div>
+      <p>&nbsp;</p>
+
+      <!--Technical Expertise:  -->
+      <div>
+        <h4>Technical Expertise:</h4>
+        <table class="skillstable">
+          <tbody class="skillstable">
+            <tr class="skillstable">
+              <td>Operating Systems</td>
+              <td>Z/OS, Windows, Linux</td>
+            </tr>
+            <tr class="skillstable">
+              <td>Databases</td>
+              <td>H2, Oracle, DB2, IMS.</td>
+            </tr>
+            <tr class="skillstable">
+              <td>Database Languages</td>
+              <td>SQL</td>
+            </tr>
+            <tr class="skillstable">
+              <td>Languages</td>
+              <td>Core Java, Gosu , COBOL, PL/I, MVS JCL, Python</td>
+            </tr>
+            <tr class="skillstable">
+              <td>IDE</td>
+              <td>Eclipise, Microfocus Rumba, IBM IDz, STS, VScode</td>
+            </tr>
+            <tr class="skillstable">
+              <td>Tools</td>
+              <td>Guidewire Studio, Git, Gitlab</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>&nbsp;</p>
+
+      <!--Guidewire Training\Development:  -->
+      <div>
+        <h4>Guidewire Training\Development:</h4>
+        <ul class="list">
+          <li>Trained in Guidewire PolicyCenter 8.0.</li>
+          <li>Trained in Guidewire ClaimCenter 9.0.</li>
+          <li>Hands on experience in Guidewire PolicyCenter Configuration</li>
+          <ul>
+            <li>Involved in Data model changes</li>
+            <li>Configuring atomic widgets ,container widgets</li>
+            <li>Gosu Queries</li>
+            <li>Validations</li>
+          </ul>
+          <li>Have knowledge on Integration basics</li>
+          <ul>
+            <li>Messaging</li>
+            <li>Batch process</li>
+            <li>Web service Consuming</li>
+          </ul>
+          <li>Currently working on PolicyCenter 10.02</li>
+        </ul>
+      </div>
+      <p>&nbsp;</p>
+
+      <!-- Projects -->
+      <div>
+        <h4>Projects:</h4>
+        <h5 class="projectnames">Project Name: <span>Notorious CRM</span></h5>
+
+        <h5>Client: State Farm Insurance Company, Bloomington, IL, US.</h5>
+        <h5>Tools : Java, Gosu and SQL</h5>
+        <h5>Duration: December 2017 – Present</h5>
+        <h5>Roles &Responsibilities:</h5>
+        <ul class="list">
+          <li>
+            Configured the Base application according to Client’s requirement
+            and learn the aspects of insurance.
+          </li>
+          <li>
+            Worked on editors in the Guide wire Studio to modify PCF files,
+            including various screen components like DVs, LVs, LDVs and PCF.
+          </li>
+          <li>
+            Experienced in the implementation of Web Services in Gosu and
+            consumption of web services from external systems.
+          </li>
+          <li>
+            Modification of existing code and unit testing according to change
+            requirement.
+          </li>
+        </ul>
+        <h5 class="projectnames">
+          Project Name: Auto Driver Information System
+        </h5>
+        <h5>Client: State Farm Insurance Company, Bloomington, IL, US.</h5>
+        <h5>Duration: April 2016 – December 2017</h5>
+        <h5>Roles & Responsibilities:</h5>
+        <ul class="list">
+          <li>
+            Trained in the areas of Object Oriented Concept, Core java, COBOL,
+            PLI, JCL, DB2, and IMS DB, and VSAM and software quality process.
+          </li>
+          <li>Trained in Mainframe Testing Skills.</li>
+          <li>
+            Involved in internal projects on Mainframe Technology and code walk
+            through & test case reviews
+          </li>
+        </ul>
+      </div>
+      <p>&nbsp;</p>
+
+      <!--Education:  -->
+      <div>
+        <h4>Education:</h4>
+        <ul class="list">
+          <li>
+            B.Tech from Sri Sai Aditya engineering college, Kakinada during 2010
+            -2014 with 66.14%.
+          </li>
+          <li>
+            Intermediate from Sri Chaitanya junior college, Rajahmundry during
+            2008-2010 with 85.3%.
+          </li>
+          <li>
+            10th standard from secondary education board in 2008 with an
+            aggregate of 79.16%
+          </li>
+        </ul>
+      </div>
+      <p>&nbsp;</p>
+
+      <!--Personal Details:  -->
+      <div>
+        <h4>Personal Details:</h4>
+        <p>Date of Birth: 01-June-1993</p>
+        <p>Mobile: 9177014206</p>
+        <p>Email id: durgaprasad4596@gmail.com</p>
+        <p>Marital Status: Unmarried</p>
+        <p>Languages: English, Telugu, Tamil and Hindi</p>
+        <p>
+          Contact Address: Flat no: S1, G-Block, Subhakeerthana Apartments,
+          Chennai-603210, Tamilnadu
+        </p>
+        <p>Current Organization: HTC Global Services</p>
+
+        <br />
+        <p>Date:</p>
+        <p>Place:</p>
+        <br />
+        <p>signature</p>
+        <p>Durga Prasad</p>
+        <a href="#header">Back to Top</a>
+      </div>
     </div>
-    <div>
-      <p style="margin-bottom: 8px">
-        View documentation at:
-      </p>
-      <a class="link" href="https://docs.begin.com" target="_blank">https://docs.begin.com</a>
+    <div class="right"></div>
+    <div id="footer">
+      <h2 id="name">Durga Prasad</h2>
     </div>
-  </div>
-  <script type="module" src="index.js"></script>
-</body>
+    <!-- <footer>Durga Prasad</footer> -->
+  </body>
 </html>
